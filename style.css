@@ -1,11 +1,12 @@
 * {
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 body {
     margin: 0;
     padding: 0;
-    background: linear-gradient(black, cyan) no-repeat fixed;
+    background: linear-gradient(#15171d, #01e7f6) no-repeat fixed;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
     display: flex;
@@ -15,55 +16,122 @@ body {
 }
 
 .box {
-    padding-top: 20px;
-    padding-right: 100px;
     width: 1000px;
     height: 700px;
-    background-color: rgb(35, 35, 35);
+    background-color: #20242d;
     border-radius: 30px;
-    box-shadow: 0 0 100px rgb(0, 0, 0);
+    box-shadow: 0 0 30px rgb(0, 0, 0);
+    padding-top: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: row;
 }
 
-.box > ul {
-    color: white;
-    list-style: none;
-    padding-left: 0;
-    text-align: right;
-}
-
-.box > p {
-    position: absolute;
-    color: white;
-    margin: 0;
-    padding-top: 10px;
-    padding-left: 100px;
-    font-size: 1.5rem;
-    text-shadow: 0 0 3px rgba(255, 255, 255, 0.851);
-}
-
-.box > hr {
-    position: absolute;
-    width: 940px;
-    margin: 10px 30px;
-}
-
-.box2 {
-    color: white;
-    text-shadow: 0 0 3px rgba(255, 255, 255, 0.851);
+.box1 {
+    margin-left: 10px;
+    flex: 1;
+    font-size: 2rem;
     text-align: left;
+}
+
+.box2 > ul {
+    margin-top: 10px;
+    display: flex;
+    float: right;
+    gap: 30px;
+}
+
+.box1, .box2 {
+    color: #feffff;
+    text-shadow: 0 0 5px #6e7176;
+}
+
+.box2 > ul > li, .box2 > ul > a > li {
+    color: #feffff;
+    text-shadow: 0 0 5px #6e7176;
+    transition: color 0.5s ease-in-out, text-shadow 0.5s ease-in-out;
+}
+
+.box2 > ul > li:hover, .box2 > ul > a > li:hover {
+    color: #63e4e4; 
+    text-shadow: 0 0 5px #4e858c;
+    transition: color 0.5s ease-in-out, text-shadow 0.5s ease-in-out;
+}
+
+a {
+    text-decoration: none;
+    color: #feffff;
+}
+
+.Socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    margin-top: 450px;
+    border: 1px solid #00e1ff;
+    box-shadow: 0 0 15px #00e1ff;
+    border-radius: 50%;
+    background-color: #20242d;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+}
+
+.Socials > a > img {
+    width: 25px;
+    height: 25px;
+    transform: rotate(0deg) scale(1);
+    transition: transform 1s ease-in-out;
+}
+
+.Socials > a > img:hover {
+    transform: rotate(360deg) scale(0.9);
+    transition: transform 1s ease-in-out;
+}
+.info {
+    position: absolute;
+    color: #feffff;
+    text-shadow: 0 0 5px #6e7176;
+    margin-top: 200px;
+}
+
+.box > button {
+    background-color: #0ef4ff ;
+    border: 2px solid #0ef4ff;
+    box-shadow: 0 0 15px #2ae6ff;
+    border-radius: 50px;
+    height: 50px;
+    width: 200px;
+    margin-top: 530px;
+    margin-left: 10px;
     position: absolute;
 }
 
-.box2 > pre {
-    color: white;
-    font-weight: lighter;
-    opacity: 0.7;
-    text-shadow: 0 0 3px rgba(255, 255, 255, 0);
-    font-size: 20px;
+.info > p {
+    color: #feffff;
+    text-shadow: 0 0 5px #d2d2d2;
+    font-size: 2rem;
+    margin: 10px;
 }
 
-.box > ul > li {
-    text-shadow: 0 0 5px rgba(255, 255, 255, 0.851);
-    display: inline-block;
-    margin-left: 20px;
+.test {
+    z-index: 2;
+    border: 5px solid rgb(0, 138, 138);
+    position: absolute;
+    border-radius: 10px;
+    background-color: rgb(0, 242, 255);
+    width: 335px;
+    height: 170px;
+    filter: blur(0);
+    opacity: 1;
+    transition: opacity 1s ease-in-out, filter 1s ease-in-out;
+}
+
+.test:hover {
+    filter: blur(100vh);
+    opacity: 0;
+    transition: opacity 1s ease-in-out, filter 1s ease-in-out
 }
