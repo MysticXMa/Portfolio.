@@ -65,6 +65,10 @@ a {
     color: #feffff;
 }
 
+a:hover {
+    text-decoration: underline;
+}
+
 div.DisplayBox > h1 {
     font-size: 1.3rem;
     text-align: center;
@@ -80,6 +84,8 @@ div.DisplayBox > p {
 
 .Socials {
     display: flex;
+    padding-top: 3px;
+    padding-left: 1px;
     justify-content: center;
     align-items: center;
     margin-left: 10px;
@@ -91,6 +97,21 @@ div.DisplayBox > p {
     position: absolute;
     width: 40px;
     height: 40px;
+}
+
+.Socials2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 300px; 
+    height: 40px;
+    border-radius: 10px;
+    color: #2cf1ff;
+    text-shadow: 0 0 5px #00e1ff;
+    border: 1px solid #00e1ff;
+    box-shadow: 0 0 15px #00e1ff;
+    background-color: #20242d;
 }
 
 .Socials > a > img {
@@ -136,8 +157,8 @@ div.DisplayBox > p {
     background-color: #34e4ff78;
     border-radius: 10px;
     box-shadow: 0 0 10px #00d5ff;
-    animation: squint 5s infinite ease-in-out;
-    transition: transform 0.5s ease-in-out;
+    animation: squint 15s infinite ease-in-out;
+    transition: transform 1s ease-in-out;
 }
 
 @keyframes squint {
@@ -145,7 +166,7 @@ div.DisplayBox > p {
        scale: 1; 
     }
     50% {
-        scale: 1.02;
+        scale: 1.05;
     }
     100% {
         scale: 1;
