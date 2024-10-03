@@ -117,13 +117,13 @@ div.DisplayBox > p {
 .Socials > a > img {
     width: 25px;
     height: 25px;
-    transform: rotate(0deg) scale(1);
+    transform: scale(1);
     transition: transform 1s ease-in-out;
 }
 
 .Socials > a > img:hover {
-    transform: rotate(360deg) scale(0.9);
-    transition: transform 1s ease-in-out;
+    transform: scale(0.8);
+    transition: transform 0.5s ease-in-out;
 }
 .info {
     position: absolute;
