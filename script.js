@@ -1,7 +1,7 @@
 function Display() {
-    if (!localStorage.getItem('welcomeMessageShown')) {
+    if (!sessionStorage.getItem('welcomeMessageShown')) {
         alert("Welcome to my website!");
-        localStorage.setItem('welcomeMessageShown', 'true');
+        sessionStorage.setItem('welcomeMessageShown', 'true');
     }
 }
 
