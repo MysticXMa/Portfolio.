@@ -177,3 +177,64 @@ div.DisplayBox > p {
 .DisplayBox:hover {
     transform: skew(-10deg);
 }
+
+footer {
+    opacity: 0.7;
+    display: flex;
+    width: 90%;
+    height: 40px;
+    border-radius: 10px;
+    position: fixed;
+    background: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20px;
+}
+
+.greeting {
+    font-size: 2rem;
+    animation: fadeIn 1.5s ease-in forwards;
+}
+
+.hobbies {
+    font-size: 1.5rem;
+    animation: fadeIn 1.5s ease-in forwards;
+}
+
+.intro {
+    font-size: 1.5rem;
+    animation: fadeIn 1.5s ease-in forwards;
+}
+
+.philosophy {
+    font-size: 1.5rem;
+    white-space: pre-wrap;
+    animation: fadeIn 1.5s ease-in forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px); /* Initial upward movement */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* Final position */
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%); /* Initial left position */
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0); /* Final position */
+    }
+}
