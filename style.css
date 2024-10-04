@@ -198,23 +198,23 @@ footer {
 
 .greeting {
     font-size: 2rem;
-    animation: fadeIn 1.5s ease-in forwards;
+    animation: fadeIn 1s ease-in-out forwards;
 }
 
 .hobbies {
     font-size: 1.5rem;
-    animation: fadeIn 1.5s ease-in forwards;
+    animation: fadeIn 1s ease-in-out forwards;
 }
 
 .intro {
     font-size: 1.5rem;
-    animation: fadeIn 1.5s ease-in forwards;
+    animation: fadeIn 1s ease-in-out forwards;
 }
 
 .philosophy {
     font-size: 1.5rem;
     white-space: pre-wrap;
-    animation: fadeIn 1.5s ease-in forwards;
+    animation: fadeIn 1s ease-in-out forwards;
 }
 
 @keyframes fadeIn {
