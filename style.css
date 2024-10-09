@@ -269,24 +269,32 @@ input[type="Submit"],[type="Reset"] {
     text-shadow: 0 0 5px #6e7176;
 }
 
+input[type="Submit"],[type="Reset"]:hover {
+    cursor: pointer;
+}
+
+input[type="Submit"]:active,[type="Reset"]:active {
+    background-color: #3a8491;
+}
+
 @keyframes fadeIn {
     0% {
         opacity: 0;
-        transform: translateY(-20px); /* Initial upward movement */
+        transform: translateY(-20px);
     }
     100% {
         opacity: 1;
-        transform: translateY(0); /* Final position */
+        transform: translateY(0);
     }
 }
 
 @keyframes slideIn {
     0% {
         opacity: 0;
-        transform: translateX(-100%); /* Initial left position */
+        transform: translateX(-100%);
     }
     100% {
         opacity: 1;
-        transform: translateX(0); /* Final position */
+        transform: translateX(0);
     }
 }
