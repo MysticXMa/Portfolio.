@@ -217,6 +217,58 @@ footer {
     animation: fadeIn 1s ease-in-out forwards;
 }
 
+.TextStyle {
+    position: absolute;
+    font-size: 2rem;
+    color: #feffff;
+    text-shadow: 0 0 5px #6e7176;
+}
+
+.Catalog {
+    overflow-y: scroll;
+    scrollbar-width: none;
+    border-radius: 10px;
+    border: 1px solid #00e1ff;
+    box-shadow: 0 0 15px #00e1ff;
+    padding: 20px;
+    padding-bottom: 0;
+    height: 300px;
+    width: 480px;
+    position: fixed;
+    top: 370px;
+    left: 70px;
+}
+
+.Catalog > p {
+    font-size: 1.3rem;
+    color: white;
+}
+
+.Catalog > input {
+    border-radius: 10px;
+    border: 1px solid #00e1ff;
+    box-shadow: 0 0 15px #00e1ff;
+    background-color: #20242d;
+    color: white;
+    text-shadow: 0 0 5px #6e7176;
+}
+
+input::placeholder {
+    color: white;
+    text-shadow: 0 0 5px #6e7176;
+}
+
+input[type="Submit"],[type="Reset"] {
+    margin-left: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid #00e1ff;
+    box-shadow: 0 0 5px #00e1ff;
+    background-color: #20242d;
+    color: white;
+    text-shadow: 0 0 5px #6e7176;
+}
+
 @keyframes fadeIn {
     0% {
         opacity: 0;
